@@ -1,0 +1,39 @@
+
+
+
+#navb {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+
+}
+
+nav img {
+    height: 50px;
+
+}
+
+#ul {
+    color: black;
+}
+
+.divnav {
+    height: 100%;
+    width: 500px;
+
+}
+
+.underdiv {
+    height: 70px;
+    width: 500px;
+}
+
+footer {
+    color: black;
+}
+.contact{
+    color: black ;
+    font-weight: 500;
+    background-color: red;
+}
