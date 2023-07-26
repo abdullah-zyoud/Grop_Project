@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/cart.css' %}">
+
+    <title>Cart</title>
+    <style>
+        body {
+          background-image: url('../static/img/s.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 100% 100%;
+          font-weight: 600;
+        }
+       
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary ">
+        <img  src="../static/img/Logo1.png" alt="Logo_Image">
+        <div class="divnav" ></div>
+        <div class="collapse navbar-collapse " id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/user">Back</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/bookmark">My bookmarked</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link text-white" href="/logout">Log out</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-primary ">
+        <h2><img class="icon" src="static\img\cart1.PNG" alt="cart">My Cart</h2>
+        <div class="divnav"></div>
+        <div class="collapse navbar-collapse " id="navbarNav">
+            <ul class="navbar-nav">
+                
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/bookmark">My bookmarked</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link text-white" href="/logout">Log out</a>
+                </li>
+            </ul>
+        </div>
+    </nav> -->
+
+    <div class="container mt-5 mb-5">
+        <div class="grid">
+            <img class="card-img-top" src="../static/img/Logo1.png" alt="Card image cap">
+            <div class="card-body h-75">
+                <h5>{{car.name}} name</h5>
+                <p class="bottom">{{car.model}} model</p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <p class="bottom mx-3">{{car.color}} color</p>
+                <br>
+                <p class="bottom">{{car.fuelType}} fuel tupe</p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <p class="bottom">{{car.price}} price</p>
+                <br>
+                <br>
+                <a  style="color: black; margin-left: 4em;" id="updel" href="edit/{{car.id}}" class="btn btn-outline-dark">Delete</a>
+            </div>
+        </div>
+
+
+       
+
+    </div>
+    <!-- <button style="color: white;"  type="submit" class="btn btn-outline-dark" >Submit</button> -->
+        
+    <a  style="color: black;" id="checkout"  href="/checkout" class="btn btn-outline-dark" >Checkout</a>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
